@@ -14,57 +14,28 @@ Time spent: **12** hours spent in total
   - Tested in version: 4.7
   - Fixed in version: 4.7.3
 - [ ] GIF Walkthrough: <img src='https://github.com/Ybrahm22/WordPress-vs.-Kali/blob/main/XSS%204.7.gif' title='Media XSS Upload Exploit' width='' alt='Media XSS Upload Exploit' />
-- [ ] Steps to recreate: 1. Get an upload compatible image from google. 2. Change image name to JS XSS exploit. 3. Upload media 4. View post to trigger alert. 
-- [ ] Affected source code:
+- [ ] Steps to recreate: 1. Get an upload compatible image from google. 2. Change image name to the JS XSS exploit. 3. Upload media 4. View post to trigger alert. 
 
   
-### 2. (Required) Vulnerability Name or ID
+### 2. XSS Hover over link
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - Vulnerability types: XSS
+  - Tested in version: 5.3
+  - Fixed in version: 5.3.1
+- [ ] GIF Walkthrough: <img src='https://github.com/Ybrahm22/WordPress-vs.-Kali/blob/main/Authenticated%20Stored%20Cross-Site%20Scripting%20(XSS)%205.3.gif' title='Stored Hover Over Link XSS' width='' alt='Stored Hover Over Link XSS' />
+- [ ] Steps to recreate: 1. Authenticated user creates a post. 2. Add XSS code in the post. 3. View post. 4. Anytime user hovers their mouse over the link, XSS is triggered
 
-### 3. (Required) Vulnerability Name or ID
+### 3. XSS Onload Youtube Link
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - Vulnerability types: XSS
+  - Tested in version: 4.6
+  - Fixed in version: 4.7.2
+- [ ] GIF Walkthrough: <img src='https://github.com/Ybrahm22/WordPress-vs.-Kali/blob/main/Onload%20XSS%204.6.gif' title='XSS Onload Youtube Link
+' width='' alt='XSS Onload Youtube Link' />
+- [ ] Steps to recreate: 1. Authenticated user creates a post. 2. In textfield add the onload XSS code. 3. After publish, whenever the post is accessed or refreshed the XSS will trigger. 
 
-### 4. (Optional) Vulnerability Name or ID
-
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-
-### 5. (Optional) Vulnerability Name or ID
-
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
-
-## Assets
-
-List any additional assets, such as scripts or files
 
 ## Resources
 
@@ -72,18 +43,15 @@ List any additional assets, such as scripts or files
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
 GIFs created with  ...
-<!-- Recommended GIF Tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+<!-- LiceCap -->
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Had lots of trouble with degrading Wordpress version due to internal changes. Numerous issues with Wordpress container on Docker. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Yug Brahmbhatt]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
