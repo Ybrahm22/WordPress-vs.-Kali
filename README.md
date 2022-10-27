@@ -47,7 +47,7 @@ GIFs created with LICECAP ...
 
 ## Notes
 
-Had lots of trouble with degrading Wordpress version due to internal changes. Numerous issues with Wordpress container on Docker. 
+Had lots of trouble with degrading Wordpress version due to internal file changes, had to look at files and change functions in order to get older versions to work. Numerous issues with Wordpress container on Docker
 
 ## License
 
