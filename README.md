@@ -10,13 +10,13 @@ Time spent: **12** hours spent in total
 ### 1. XSS Media Upload
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
+  - Vulnerability types: XSS 
+  - Tested in version: 4.7
+  - Fixed in version: 4.7.3
+- [ ] GIF Walkthrough: <img src='https://github.com/Ybrahm22/WordPress-vs.-Kali/blob/main/XSS%204.7.gif' title='Media XSS Upload Exploit' width='' alt='Media XSS Upload Exploit' />
+- [ ] Steps to recreate: 1. Get an upload compatible image from google. 2. Change image name to JS XSS exploit. 3. Upload media 4. View post to trigger alert. 
 - [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
   
 ### 2. (Required) Vulnerability Name or ID
 
